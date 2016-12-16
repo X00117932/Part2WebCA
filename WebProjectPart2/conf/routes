@@ -1,0 +1,36 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+GET	/contact		    controllers.HomeController.contact
+GET	/action  	 	    controllers.HomeController.action
+GET	/comedy 		    controllers.HomeController.comedy
+GET	/romance		    controllers.HomeController.romance
+GET	/scifi			    controllers.HomeController.scifi
+GET	/CaptainAmericaCivilWar     controllers.HomeController.CaptainAmericaCivilWar
+GET	/CentralIntelligence        controllers.HomeController.CentralIntelligence
+GET	/JasonBourne	            controllers.HomeController.JasonBourne
+GET	/LondonHasFallen	    controllers.HomeController.LondonHasFallen
+GET	/SausageParty	    	    controllers.HomeController.SausageParty
+GET	/TheBrothersGrimsby	    controllers.HomeController.TheBrothersGrimsby
+GET	/TheNiceGuys		    controllers.HomeController.TheNiceGuys
+GET	/WarCraft		    controllers.HomeController.WarCraft
+GET	/BridgetJonesBaby	    controllers.HomeController.BridgetJonesBaby
+GET	/MeBeforeYou		    controllers.HomeController.MeBeforeYou
+GET	/MyBigFatGreekWedding2	    controllers.HomeController.MyBigFatGreekWedding2
+GET	/SingStreet	   	    controllers.HomeController.SingStreet
+GET	/Arrival	   	    controllers.HomeController.Arrival
+GET	/Ghostbusters	   	    controllers.HomeController.Ghostbusters
+GET	/IndepDayResur	   	    controllers.HomeController.IndepDayResur
+GET	/DocStrange	   	    controllers.HomeController.DocStrange
+
+
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WebCAIndex</title>
+    
+    <link rel = "stylesheet" media = "screen" href = "@routes.Assets.versioned("stylesheets/main.css")">
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+    <script src="@routes.Assets.versioned("javascripts/holder.min.js")"></script>
+    <script src="@routes.Assets.versioned("javascripts/ie8responsivefilewarning.js")"></script>
+    <script src="@routes.Assets.versioned("javascripts/ie10-viewport-bug-workaround.js")"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="">OurWebCA</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/action">Action</a></li>
+                    <li><a href="/comedy">Comedy</a></li>
+                    <li><a href="/romance">Romance</a></li>
+					<li><a href="/scifi">SCI-FI</a></li>
+					<li role="separator" class="divider"></li>
+             
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="Action-slide" src="data:image/png;base64,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"alt="Action slide">
+		  <div class="container">
+            <div class="carousel-caption">
+              <h1>Riveting Action Movies</h1>
+              <p>Check out this seasons action movies now </p>
+              <p><a class="btn btn-lg btn-primary" href="/action" role="button">Check it Out</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="Romance-slide" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWqBX_pyvF88_L1ctdLbkwKYMX5PWJSTYCVFfhXIgLVEKsTOzc" alt="Romance slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Powerful Romance Movies</h1>
+              <p>Take a look at our selection of Romance Movies here<p>
+              <p><a class="btn btn-lg btn-primary" href="/romance" role="button">Check it Out</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="Last-slide" src="http://52.16.44.195/snuggliving/wp-content/uploads/2015/09/Contact-us-Snugg-Living.jpg" alt="Last slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Contact Us</h1>
+              <p>For any questions querys or recommendations heres how to get in touch</p>
+              <p><a class="btn btn-lg btn-primary" href="/contact" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+   
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+	  <div class="col-md-1">
+	  </div>
+      <div class="row featurette">
+        <div class="col-md-6">
+          <h2 class="featurette-heading">Movie Of The Month</h2>
+          <p class="lead">Doctor Strange</p>
+		  <p>Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces...</p><a href="Genre/Sci-fi/doc_Strange.html">Read More</a>
+        </div>
+        <div class="col-md-4">
+           <iframe width="500" height="300" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allowfullscreen></iframe>
+	  </div>
+      </div>
+	  <hr class="featurette-divider">
+
+      <div class="row featurette">
+	  <div class="col-md-1">
+	  </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Random Movie?<span class="text-muted">
+          <p class="lead">Ever sat there and didnt know what to watch.......well click our random movie button and be warped straight to a movie of random choice!</p>
+        </div>
+		<script>
+
+			var randomlinks=new Array()
+
+			randomlinks[0]="/BridgetJonesBaby"
+			randomlinks[1]="/MeBeforeYou"
+			randomlinks[2]="/MyBigFatGreekWedding2"
+			randomlinks[3]="/SingStreet"
+			randomlinks[4]="/CaptainAmericaCivilWar"
+			randomlinks[5]="/JasonBourne"
+			randomlinks[6]="/LondonHasFallen"
+			randomlinks[7]="/Warcraft"
+			randomlinks[8]="/CentralIntelligence"
+			randomlinks[9]="/SausageParty"
+			randomlinks[10]="/TheBrothersGrimsby"
+			randomlinks[11]="/TheNiceGuys"
+			randomlinks[12]="/Arrival"
+			randomlinks[13]="/DocStrange"
+			randomlinks[14]="/Ghostbusters"
+			randomlinks[15]="/IndepDayResur"
+			
+
+			function randomlink(){
+			window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+			}
+		</script>
+        <div class="col-md-4">
+           <form method="post">
+		   <p><a class="btn btn-lg btn-primary" input type="button" value="Random Movie" onclick="randomlink()" role="button">Random Movie?</a></p> 
+		   </p> 
+		   </form>
+	  </div>
+      </div>
+	  
+	  
+	  
+      <hr class="featurette-divider">
+	  <div class="row featurette">
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="/">Back to top</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="@routes.Assets.versioned("javascripts/holder.min.js")"></script>
+  </body>
+</html>
